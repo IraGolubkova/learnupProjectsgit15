@@ -2,9 +2,9 @@ class Main {
     public static void main(String[] args) {
         boolean isGreenLight = true;
 
-        int speedOfPlayer1 = 0;
+        int speedOfPlayer1 = 1;
         int speedOfPlayer2 = 1;
-        int speedOfPlayer3 = 0;
+        int speedOfPlayer3 = 1;
 
         // Допишите здесь логику так, что будет подсчитано и выведено
         // количество игроков, которые выбывают.
