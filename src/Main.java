@@ -12,7 +12,7 @@ class Main {
         // Если свет красный, то выбывает каждый, чья скорость не 0.
 
         int countOfPlayers = 0;
-        if (isGreenLight == false) {
+        if (isGreenLight == true) {
 
             if (speedOfPlayer1 != 0) {
                 countOfPlayers = countOfPlayers + 1;
