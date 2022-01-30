@@ -3,8 +3,8 @@ class Main {
         boolean isGreenLight = false;
 
         int speedOfPlayer1 = 1;
-        int speedOfPlayer2 = 0;
-        int speedOfPlayer3 = 0;
+        int speedOfPlayer2 = 2;
+        int speedOfPlayer3 = 2;
 
         // Допишите здесь логику так, что будет подсчитано и выведено
         // количество игроков, которые выбывают.
