@@ -1,67 +1,34 @@
 package task17;
 
+import Main.DroppedOutPlayerCalculator;
+
+import java.util.Arrays;
+
 public class main17 {
 
     public static void main(String[] args) {
-        boolean isGreenLight = false;
+        DroppedOutPlayerCalculator.isGreenLight = false;
 
-        int[] speedOfPlayer1 = new int[3];
-        speedOfPlayer1[0] = 0;
-        speedOfPlayer1[1] = 1;
-        speedOfPlayer1[2] = 2;
+        int[] speedOfPlayer = new int[3];
+        speedOfPlayer[0] = 0;
+        speedOfPlayer[1] = 3;
+        speedOfPlayer[2] = 2;
 
+        int numberOfDropouts = SpeedPlayersMethods.numberOfDropouts(speedOfPlayer);
 
-        int countOfPlayers1 = 0;
-        if (isGreenLight == false) {
+        System.out.println("Количество выбывших игроков " + numberOfDropouts);
 
-            if (speedOfPlayer1[0] != 0) {
-                ++countOfPlayers1;
-            }
+        int[] speedsOfDropped = SpeedPlayersMethods.speedsOfDropped(speedOfPlayer);
 
-            if (speedOfPlayer1[1] != 0) {
-                ++countOfPlayers1;
-            }
-
-            if (speedOfPlayer1[2] != 0) {
-                ++countOfPlayers1;
-            }
-
-        }
-        System.out.println("Количество выбывших игроков: " + countOfPlayers1);
+        System.out.println("Скорость выбывающих " + Arrays.toString(speedsOfDropped));
 
 
-        int[] speedOfPlayer2 = new int[3];
-        speedOfPlayer2[0] = 0;
-        speedOfPlayer2[1] = 1;
-        speedOfPlayer2[2] = 2;
+        int[] speedsOfNotDropped = SpeedPlayersMethods.speedsOfNotDropped(speedOfPlayer);
 
-        System.out.println("Скорость выбывающих");
+        System.out.println("Скорость не выбывающих " + Arrays.toString(speedsOfNotDropped));
 
-        for (int countOfPlayers2 = 0; countOfPlayers2 < speedOfPlayer2.length; ++countOfPlayers2) {
-            if (speedOfPlayer2[countOfPlayers2] != 0) {
-                System.out.println(speedOfPlayer2[countOfPlayers2]);
-
-
-
-                //int[] speedOfPlayer3 = new int[3];
-                //speedOfPlayer3[0] = 0;
-                //speedOfPlayer3[1] = 1;
-                //speedOfPlayer3[2] = 2;
-
-                //System.out.println("Скорость не выбывающих");
-
-
-                // for (int countOfPlayers3 = 0; countOfPlayers3 < speedOfPlayer3.length; ++countOfPlayers3) {
-
-                //}
-                //for (int speedOfPlayer2 : speedOfPlayer3) {
-                // if (speedOfPlayer3[nonRetiringPlayer] == 1) {
-                // System.out.println(speedOfPlayer3[nonRetiringPlayer]);
-
-
-            }
-        }
     }
+
 }
 
 
