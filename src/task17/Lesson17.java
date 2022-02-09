@@ -4,7 +4,7 @@ import Main.DroppedOutPlayerCalculator;
 
 import java.util.Arrays;
 
-public class main17 {
+public class Lesson17 {
 
     public static void main(String[] args) {
         DroppedOutPlayerCalculator.isGreenLight = false;
@@ -13,6 +13,7 @@ public class main17 {
         speedOfPlayer[0] = 0;
         speedOfPlayer[1] = 3;
         speedOfPlayer[2] = 2;
+
 
         int numberOfDropouts = SpeedPlayersMethods.numberOfDropouts(speedOfPlayer);
 
