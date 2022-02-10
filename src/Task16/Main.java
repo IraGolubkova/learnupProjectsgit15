@@ -1,6 +1,6 @@
-package Main;
+package Task16;
 
-public class Lesson16 {
+public class Main {
 
     public static void printCountOfDroppedOutPlayers(int speedOfPlayer1, int speedOfPlayer2, int speedOfPlayer3) {
         int countOfPlayers = 0;

@@ -1,4 +1,4 @@
-package Main;
+package Task16;
 
 public class DroppedOutPlayerCalculator {
     public static boolean isGreenLight = false;

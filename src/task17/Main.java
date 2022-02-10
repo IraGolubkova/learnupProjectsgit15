@@ -2,7 +2,7 @@ package task17;
 
 import java.util.Arrays;
 
-public class Lesson17 {
+public class Main {
 
     public static void main(String[] args) {
         SpeedPlayersMethods.isGreenLight = false;
