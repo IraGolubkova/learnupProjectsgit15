@@ -1,13 +1,11 @@
 package task17;
 
-import Main.DroppedOutPlayerCalculator;
-
 import java.util.Arrays;
 
 public class Lesson17 {
 
     public static void main(String[] args) {
-        DroppedOutPlayerCalculator.isGreenLight = false;
+        SpeedPlayersMethods.isGreenLight = false;
 
         int[] speedOfPlayer = new int[3];
         speedOfPlayer[0] = 0;

@@ -1,20 +1,32 @@
 package task17;
 
-import Main.DroppedOutPlayerCalculator;
 
 public class SpeedPlayersMethods {
+    public static boolean isGreenLight = false;
 
     public static int numberOfDropouts(int[] speedOfPlayer) {
         int countOfPlayers = 0;
         for (int i = 0; i != speedOfPlayer.length; ++i) {
 
-            if (DroppedOutPlayerCalculator.isPlayerDroppedOut(speedOfPlayer[i])) {
+            if (isPlayerDroppedOut(speedOfPlayer[i])) {
                 ++countOfPlayers;
 
             }
 
         }
         return countOfPlayers;
+    }
+    public static boolean isPlayerDroppedOut(int speedOfPlayer) {
+        //return isGreenLight == false && speedOfPlayer != 0;
+        if (isGreenLight == false) {
+            if (speedOfPlayer != 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
     }
 
 
@@ -26,7 +38,7 @@ public class SpeedPlayersMethods {
         int resultCount = 0;
         for (int i = 0; i != speedOfPlayer.length; ++i) {
 
-            if (DroppedOutPlayerCalculator.isPlayerDroppedOut(speedOfPlayer[i])) {
+            if (isPlayerDroppedOut(speedOfPlayer[i])) {
                 result[resultCount] = speedOfPlayer[i];
                 ++resultCount;
 
@@ -46,7 +58,7 @@ public class SpeedPlayersMethods {
         int resultCount = 0;
         for (int i = 0; i != speedOfPlayer.length; ++i) {
 
-            if (DroppedOutPlayerCalculator.isPlayerDroppedOut(speedOfPlayer[i]) == false) {
+            if (isPlayerDroppedOut(speedOfPlayer[i]) == false) {
                 result[resultCount] = speedOfPlayer[i];
                 ++resultCount;
 
